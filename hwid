@@ -1,0 +1,24 @@
+<?php
+ 
+$Key = $_GET["Key"];
+$HWID = $_GET["HWID"];
+ 
+$KeyList = array(
+    "test"
+);
+ 
+$HWIDList = array(
+    "472b6e0d3bec90e7f4daa70b9e9063f1667a3a76e05e65519d00378a529c97d10e473ed5c9a4f408888cc5e717484de9d94e8a8783c3fa19c107adb87b4f6113"
+);
+ 
+if (in_array($Key,$KeyList,TRUE)) {
+    if (in_array($HWID,$HWIDList,TRUE)) {
+        echo "WHITELIST !";
+    } else {
+        echo "Invaid HWID !";
+    };
+} else {
+    echo "Invaid Key";
+};
+ 
+?>
