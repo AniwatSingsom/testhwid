@@ -83,3 +83,8 @@ def main():
         print(Fore.GREEN + f"Successful Key: {key}")
         pyperclip.copy(key)
     except Exception as e:
+        pass
+    finally:
+        driver.quit()
+if __name__ == "__main__":
+    main()
